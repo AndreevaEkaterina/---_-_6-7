@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: #E5E5E5;
+    background-color: #fff;
     font-family: 'Lato', sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -302,7 +302,6 @@ a {
     gap: 30px;
     list-style: none;
     margin-bottom: 48px;
-
 }
 
 .products-item {
@@ -438,9 +437,8 @@ a {
 }
 
 .products-btn:hover {
-    background-color: #ccc;
-    color: #000;
-    border: 2px solid #000;
+    background-color: #F16D7F;
+    color: #fff;
 }
 
 .products-btn:active {
@@ -450,6 +448,316 @@ a {
 }
 
 /* ------------------products END---------------------- */
+
+/*footer*/
+.page-footer {
+    width:100%;
+}
+
+.loyalty-wrp {
+    background-color: #222224;
+    width:100%;
+}
+
+.loyalty-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(30%, 360px));
+    gap: 30px;
+    list-style: none;
+}
+
+.loyalty-item {
+    max-width: 360px;
+    min-height: 341px;
+    position: relative;
+    text-decoration: none;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.loyalty-item-wrp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    min-height: inherit;
+    width: 100%;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.loyalty-item-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-height: 134px;
+}
+
+.loyalty-item-title {
+    margin-bottom: 16px;
+    font-weight: 400;
+    font-size: 19.96px;
+    line-height: 24px;
+    color: #FBFBFB;
+}
+
+.loyalty-item-txt {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #FBFBFB;
+}
+
+.loyalty-item-logo {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.loyalty-item-logo-delivery {
+    background-image: url('../img/delivery.svg');
+    width: 45px;
+    height: 32px;
+    margin-bottom: 28px;
+}
+
+.loyalty-item-logo-sales {
+    background-image: url('../img/sales.svg');
+    width: 40px;
+    height: 40px;
+    margin-bottom: 19px;
+}
+
+.loyalty-item-logo-quality {
+    background-image: url('../img/quality.svg');
+    width: 47px;
+    height: 35px;
+    margin-bottom: 25px;
+}
+
+.subscribe-wrp {
+    background-image: url('../img/subscribe.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100%;
+}
+
+.subscribe-list {
+    display: grid;
+    grid-template-columns: 360px 557px;
+    gap: 230px;
+    list-style: none;
+}
+
+.subscribe-item {
+    max-width: 360px;
+    min-height: 448px;
+    position: relative;
+    text-decoration: none;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.subscribe-item-email {
+    max-width: 557px;
+}
+
+.subscribe-item-wrp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: start;
+    flex-wrap: wrap;
+    min-height: inherit;
+    width: 100%;
+    text-decoration: none;
+}
+
+.subscribe-item-photo {
+    background-image: url('../img/Intersect.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    margin-top: 97px;
+    margin-bottom: 30px;
+}
+
+.subscribe-item-txt {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0;
+    text-align: center;
+    font-style: italic;
+    color: #222224;
+}
+
+.subscribe-item-txt-wrap {
+    height: 61px;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.subscribe-item-header {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0;
+    text-align: center;
+    color: #222224;
+}
+
+.subscribe-item-promo-wrp {
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.subscribe-item-promo-txt {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0;
+    text-align: center;
+    color: #222224;
+}
+
+.subscribe-item-button-wrp {
+    width: 356px;
+    height: 49px;
+    display: flex;
+    margin-top: 32px;
+}
+
+.subscribe-form__input {
+    padding: 7px 0 6px 22px;
+    outline: none;
+    box-sizing: border-box;
+    background-color: #E1E1E1;
+    border: none;
+    color: #222224;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17px;
+    text-transform: capitalize;
+    flex: 1;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.subscribe-form__button {
+    min-width: 100px;
+    justify-content: center;
+    background-color: #E05C6E;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 7px 7px 6px 8px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+.subscribe-form-wrp {
+    display: flex;
+    flex: 1;
+}
+
+.copyright-wrp {
+    background-color: #222224;
+    width:100%;
+}
+
+.copyright-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.copyright-item {
+    max-width: 332px;
+    min-height: 79px;
+    position: relative;
+    text-decoration: none;
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.copyright-item-social {
+    max-width: 148px;
+}
+
+.copyright-item-txt {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FBFBFB;
+}
+
+.copyright-item-wrp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    min-height: inherit;
+    width: 100%;
+    text-decoration: none;
+}
+
+.copyright-link-wrp {
+    background-color: #fff;
+    margin-right: 7px;
+    cursor: pointer;
+}
+
+.copyright-link-wrp:hover {
+    background-color: #F16D7F;
+}
+
+.copyright-item-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-height: 32px;
+    width: 31px;
+    height: 32px;
+}
+
+.copyright-link-wrp:last-child {
+    margin: 0;
+}
+
+.copyright-item-logo {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.copyright-link-wrp:hover .copyright-item-logo {
+    fill: white;
+}
+/*footer end*/
 
 /* 1025 */
 @media (max-width: 1025px) {
@@ -497,12 +805,55 @@ a {
         gap: 16px;
         margin-bottom: 32px;
     }
+
+    .loyalty-list {
+        gap: 48.47px;
+        width: 100%;
+        grid-template-columns: none;
+        justify-content: center;
+        padding-bottom: 64px;
+        padding-top: 48px;
+    }
+
+    .loyalty-item {
+        min-height: 134px;
+    }
+
+    .subscribe-list {
+        gap: 0;
+        width: 100%;
+        grid-template-columns: none;
+        justify-content: center;
+        padding-bottom: 140px;
+        padding-top: 64px;
+    }
+
+    .subscribe-item {
+        min-height: 225px;
+    }
+
+    .subscribe-item-email {
+        min-height: 137px;
+        margin-top: 48px;
+    }
+
+    .subscribe-item-photo {
+        margin: 0;
+    }
+
+    .subscribe-item-txt-wrap {
+        margin: 0;
+    }
+
+    .subscribe-item-button-wrp {
+        margin-top: 27px;
+    }
 }
 
 /*767*/
 @media (max-width: 768px) {
     body {
-        min-width: 375px;
+        min-width:375px;
     }
 
     .promo {
@@ -513,7 +864,7 @@ a {
     }
 
     .promo-photo {
-        display: none;
+        display:none;
     }
 
     .promo-title-big {
@@ -576,5 +927,25 @@ a {
 
     .search-icon-form__input {
         left: -65px;
+    }
+
+    .subscribe-wrp {
+        background-image: url('../img/subscribe-layer.png');
+    }
+
+    .copyright-list {
+        flex-direction: column-reverse;
+    }
+
+    .copyright-item {
+        width: 251px;
+        min-height: 19px;
+        margin-bottom: 9px;
+    }
+
+    .copyright-item-social {
+        min-height: 32px;
+        margin-top: 43px;
+        margin-bottom: 40px;
     }
 }
