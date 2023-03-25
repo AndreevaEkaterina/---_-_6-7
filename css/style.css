@@ -1,4 +1,4 @@
-* {
+*{
     padding: 0;
     margin: 0;
 }
@@ -98,6 +98,7 @@ a {
     height: 100%;
     fill: #fff;
 }
+
 .search-icon-form__input:focus {
     width: 180px;
     transition: width 1s ease;
@@ -107,6 +108,7 @@ a {
 .search-icon-form__input:focus~.search-icon-form__label>.search-icon-form__svg {
     fill: #F26376;
 }
+
 .page-header-wrp-btn-right {
     display: flex;
     gap: 33px;
@@ -184,7 +186,7 @@ a {
     box-sizing: border-box;
     background-color: #fff;
     position: absolute;
-    top: 80px;
+    top: 81px;
     /* значение в свойстве top удобно задать через переменную равную высоте первого блока */
     right: 0;
     z-index: 20;
@@ -312,11 +314,35 @@ a {
     width: 100%;
     height: 100%;
     fill: #fff;
+    position: relative;
+}
+
+/* .cart-btn-link svg {
+    width: 32px;
+    height: 29px;
+} */
+.cart-btn-link span {
+    display: block;
+    width: 19px;
+    height: 19px;
+    background-color: #F16D7F;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #fff;
+    position: absolute;
+    top: -10px;
+    left: 24px;
 }
 
 .cart-btn-link:hover {
     fill: #F26376;
 }
+
 .cart-btn-link:active {
     fill: #6F6E6E;
 }
@@ -333,12 +359,13 @@ a {
     margin-bottom: 65px;
 }
 
-.promo-photo {
-    min-height: 764px;
+.promo-photo img {
+    max-height: 764px;
 }
 
 .promo-title {
     width: 405px;
+    min-height: 92px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -367,7 +394,7 @@ a {
 
 .rectangle {
     width: 12px;
-    height: 92px;
+    min-height: 92px;
     background: #F16D7F;
 }
 
@@ -413,20 +440,20 @@ a {
 }
 
 .categories-item:nth-child(1) {
-    background-image: url('../img/1-for women.jpg');
+    background-image: url('../img/1-for-women.jpg');
 }
 
 .categories-item:nth-child(2) {
-    background-image: url('../img/2-for men.jpg');
+    background-image: url('../img/2-for-men.jpg');
 }
 
 .categories-item:nth-child(3) {
-    background-image: url('../img/3-for kids.jpg');
+    background-image: url('../img/3-for-kids.jpg');
 }
 
 .categories-item:last-child {
     max-width: 100%;
-    background-image: url('../img/4-ACCESORIES.jpg');
+    background-image: url('../img/4-accesories.jpg');
 }
 
 .categories-item-link {
@@ -778,7 +805,7 @@ a {
 }
 
 .subscribe-item-photo {
-    background-image: url('../img/Intersect.png');
+    background-image: url('../img/intersect.png');
     background-size: cover;
     background-repeat: no-repeat;
     width: 96px;
@@ -874,6 +901,11 @@ a {
     cursor: pointer;
 }
 
+.subscribe-form__button:hover {
+    background-color: #fff;
+    color: #E05C6E;
+}
+
 .subscribe-form-wrp {
     display: flex;
     flex: 1;
@@ -966,7 +998,9 @@ a {
     .center {
         max-width: 768px;
     }
-
+    .promo-photo img {
+        max-height: 368px;
+    }
     .promo {
         gap: 39px;
     }
@@ -993,7 +1027,10 @@ a {
     .categories {
         margin-bottom: 110px;
     }
-
+    .products {
+        padding-left: calc(50% - 368px);
+        padding-right: calc(50% - 368px);
+    }
     .products-title {
         margin: 0 auto 3.3px;
     }
